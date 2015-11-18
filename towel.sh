@@ -1,8 +1,8 @@
 #!/bin/bash
 #: Title                 : towel
-#: Date                  : November 3, 2015
+#: Date                  : November 18, 2015
 #: Author                : Jeff Wyonch <jeff.wyonch@gmail.com>
-#: Version               : 0.0.1
+#: Version               : 0.0.2
 #: Description           : Basic wayfinding utility, printing
 #                          useful info to the screen. Name
 #                          inspired by Douglas Adams.
@@ -11,14 +11,15 @@
 theDate=$(date "+%A, %B %d, %Y, %I:%I %p, %Z")
 userName=$(whoami)
 currentDirectory=$(pwd)
-currentDirectorySize=$(du -sh)
+#currentDirectorySize=$(du -sh) #Apple go boom
 totalFiles=$(find . -maxdepth 1 -type f | wc -l)
+machine=$(uname -prs)
 
 printf '\n##### DONT PANIC #####'
-printf "\nToday is:            $theDate"
-printf "\nwhoami:              $userName"
-printf "\nHome directory:      $HOME"
-printf "\nCurrent directory:   $currentDirectory"
-printf "\n  Size:              $currentDirectorySize"
-printf "\n  Files:             $totalFiles"
+printf "\nToday is:  $theDate"
+printf "\nwhoami:    $userName"
+printf "\n           $HOME ($machine)"
+printf "\nCurrent:   $currentDirectory"
+#printf "\n  Size:   $currentDirectorySize" #Apple go boom
+printf "\n  Files:   $totalFiles"
 printf '\n##### DONT PANIC #####\n\n'
