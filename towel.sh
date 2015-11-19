@@ -17,8 +17,8 @@ machine=$(uname -prs)
 
 printf '\n##### DONT PANIC #####'
 printf "\nToday is:  $theDate"
-printf "\nwhoami:    $userName"
-printf "\n           $HOME ($machine)"
+printf "\nwhoami:    $userName ($machine)"
+printf "\n           $HOME"
 printf "\nCurrent:   $currentDirectory"
 #printf "\n  Size:   $currentDirectorySize" #Apple go boom
 printf "\n  Files:   $totalFiles"
