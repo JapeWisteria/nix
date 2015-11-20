@@ -8,7 +8,7 @@
 #                          inspired by Douglas Adams.
 #: Options               : none
 
-theDate=$(date "+%A, %B %d, %Y, %I:%I %p, %Z")
+theDate=$(date "+%a, %b %d, %Y, %I:%I %p, %Z")
 userName=$(whoami)
 currentDirectory=$(pwd)
 #currentDirectorySize=$(du -sh) #Apple go boom
