@@ -7,9 +7,9 @@ I will put links and tips here, at some point. This is mainly for myself.
 
 ## Getting help inside the terminal
 <pre><code>
-whatis <command> #gets short info for available shell commands
-apropos <command> #same as whatis
-man <command> #help database with more information about the command, including switches
-whereis <command> #where is the physical application in filesystem
+whatis &lt;command> #gets short info for available shell commands
+apropos &lt;command> #same as whatis
+man &lt;command> #help database with more information about the command, including switches
+whereis &lt;command> #where is the physical application in filesystem
 </code></pre>
 
