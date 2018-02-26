@@ -1,8 +1,8 @@
 #!/bin/bash
 #: Title                 : Version
-#: Date                  : May 25, 2017
+#: Date                  : Feb 26, 2018
 #: Author                : Jeff Wyonch <jeff.wyonch@gmail.com>
-#: Version               : 0.0.1
+#: Version               : 0.0.2
 #: Description           : Print all the versions.
 #: Options               : none
 
@@ -43,6 +43,21 @@ else
     vruby='Ruby is not installed.'
 fi
 
+# Node
+if hash node 2>/dev/null; then
+    vnode=$(node --version)
+else
+    vnode='Node is not installed.'
+fi
+
+# NPM
+if hash node 2>/dev/null; then
+    vnpm=$(npm --version)
+else
+    vnpm='NPM is not installed.'
+fi
+
+
 # Mythical language for testing
 if hash mylang 2>/dev/null; then
     vmylang='MyLang is installed.'
@@ -54,6 +69,8 @@ fi
 printf -- "------- Installed Langs -------"
 printf "\nGit    :  $vgit"
 printf "\nJava   :  $vjava"
+printf "\nNode   :  $vnode"
+printf "\nNPM    :  $vnpm"
 printf "\nPerl   :  $vperl"
 printf "\nPython :  $vpython"
 printf "\nRuby   :  $vruby"
