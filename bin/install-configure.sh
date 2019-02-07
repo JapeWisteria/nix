@@ -7,5 +7,5 @@
 brew install wget
 brew install dos2unix
 brew install gcal #fixes issues with mac cal
-
+brew install truncate
 
