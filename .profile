@@ -15,3 +15,14 @@ alias list="find . -type f" #list all subdirs
 
 # Pretty print the path https://github.com/thoughtbot/dotfiles/blob/master/aliases
 alias path='echo $PATH | tr -s ":" "\n"'
+
+#
+#functions
+#
+
+# Open man page as PDF
+function manpdf() {
+ man -t "${1}" | open -f -a /Applications/Preview.app/
+}
+
+
