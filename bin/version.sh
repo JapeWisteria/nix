@@ -29,6 +29,13 @@ else
     vperl='Perl is not installed.'
 fi
 
+# PHP
+if hash php 2>/dev/null; then
+    vphp=$(php -r 'echo PHP_VERSION;')
+else
+    vphp='PHP is not installed.'
+fi
+
 # Python
 if hash python 2>/dev/null; then
     vpython=`python -c 'import sys; print(".".join(map(str, sys.version_info[:3])))'`
@@ -72,6 +79,7 @@ printf "\nJava   :  $vjava"
 printf "\nNode   :  $vnode"
 printf "\nNPM    :  $vnpm"
 printf "\nPerl   :  $vperl"
+printf "\nPHP    :  $vphp"
 printf "\nPython :  $vpython"
 printf "\nRuby   :  $vruby"
 #printf "\nMYLANG   :  $vmylang"
