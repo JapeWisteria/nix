@@ -7,6 +7,7 @@ brew "httpd", restart_service: true
 brew "httpie"
 brew "libid3tag"
 brew "openvpn"
+brew "php", restart_service: true
 brew "python"
 brew "screenfetch"
 brew "tree"
